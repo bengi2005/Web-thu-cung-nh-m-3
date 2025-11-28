@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= 'http://localhost/D%E1%BB%B1%20%C3%A1n%201/xuong-thu-cung1/admin/?act=danh-muc' ?>" class="nav-link">
+            <a href="<?= 'http://localhost/D%E1%BB%B1%20%C3%A1n%201/xuong-thu-cung1/admin/?act=san-pham' ?>" class="nav-link">
               <i class="nav-icon fas fa-cat"></i>
               <p>
                 Sản phẩm
