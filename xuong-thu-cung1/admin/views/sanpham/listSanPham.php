@@ -61,13 +61,17 @@ require_once __DIR__ . '/../layout/sidebar.php';
                     <td><?= $sanPham['ten_danh_muc'] ?></td>
                     <td><?= $sanPham['trang_thai'] == 1 ? 'Còn Bán':'Dừng bán'; ?></td>
                     <td>
-                      <a href="<?= 'http://localhost/D%E1%BB%B1%20%C3%A1n%201/xuong-thu-cung1/admin/?act=form-sua-danh-muc&id_danh_muc=' .$sanPham['id'] ?>">
+                      <div class="btn-group">
+                      <a href="<?= 'http://localhost/D%E1%BB%B1%20%C3%A1n%201/xuong-thu-cung1/admin/?act=chi-tiet-san-pham&id_san_pham=' .$sanPham['id'] ?>">
+                        <button class="btn btn-primary">Xem chi tiet</button>
+                      </a>
+                      <a href="<?= 'http://localhost/D%E1%BB%B1%20%C3%A1n%201/xuong-thu-cung1/admin/?act=form-sua-san-pham&id_san_pham=' .$sanPham['id'] ?>">
                         <button class="btn btn-warning">Sua</button>
                       </a>
-                      <a href="<?= 'http://localhost/D%E1%BB%B1%20%C3%A1n%201/xuong-thu-cung1/admin/?act=xoa-danh-muc&id_danh_muc=' .$sanPham['id'] ?>" onclick="return confirm('Ban co dong y xoa khong')">
-                        <button class="btn btn-warning">Xoa</button>
+                      <a href="<?= 'http://localhost/D%E1%BB%B1%20%C3%A1n%201/xuong-thu-cung1/admin/?act=xoa-san-pham&id_san_pham=' .$sanPham['id'] ?>" onclick="return confirm('Ban co dong y xoa khong')">
+                        <button class="btn btn-danger">Xoa</button>
                       </a>
-                      
+                      </div>
                     
                     </td>
 
